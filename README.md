@@ -180,7 +180,7 @@ array | string   getForecastsWeather(string $city, string $format = 'json')
 执行 `artisan` 命令，发布配置文件
 
 ```sh
-php artisan vendor:publish --provider="Pudongping\Weather\WeatherServiceProvider"
+php artisan vendor:publish --provider="Pudongping\Weather\ServiceProvider"
 ```
 
 在 Laravel 中使用也是同样的安装方式，配置写在 `config/weather.php` 中，或者自己在 `config` 目录下新建 `weather.php` 文件，填写以下内容亦可。
