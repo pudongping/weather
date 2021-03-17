@@ -134,7 +134,7 @@ $response = $weather->getForecastsWeather('上海');
 以上两个方法第二个参数为返回值类型，可选 `json` 与 `xml`，默认 `json`：
 
 ```php
-$response = $weather->getLiveWeather('深圳', 'xml');
+$response = $weather->getLiveWeather('上海', 'xml');
 ```
 
 返回值示例：
@@ -223,7 +223,7 @@ public function showWeather(Weather $weather)
 
 public function showWeather()
 {
-    $response = app('weather')->getLiveWeather('深圳');
+    $response = app('weather')->getLiveWeather('上海');
     
     // 或者直接使用城市的 adcode 传参
     // $response = app('weather')->getLiveWeather('310000');
