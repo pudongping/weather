@@ -1,0 +1,31 @@
+{
+    "name": "pudongping/weather",
+    "description": "A weather SDK.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pudongping",
+            "email": "pudongping67@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pudongping\\Weather\\": "./src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pudongping\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
